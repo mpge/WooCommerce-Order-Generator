@@ -98,7 +98,11 @@ function wc_generate_test_orders( $order_count, $products_per_order, $include_ca
 }
 
 function wc_generate_test_products( $product_count ) {
-    $image_url = 'https://stallionexpress.ca/wp-content/uploads/2024/09/tpl-04.png';
+    // Generate a random hex color for the background
+    $randomColor = sprintf('%02X%02X%02X', rand(0, 255), rand(0, 255), rand(0, 255));
+    
+    // Use the random color in the placeholder URL with a fixed white text color
+    $image_url = "https://placehold.co/400x400/{$randomColor}/FFF.png";
 
     for ( $i = 0; $i < $product_count; $i++ ) {
         $product = new WC_Product_Simple();
