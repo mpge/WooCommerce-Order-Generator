@@ -32,3 +32,7 @@ You can also generate products programmatically by calling the `wc_generate_test
 
 ```php
 wc_generate_test_products(10); // Generates 10 test products.
+
+## Support
+
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=000)](https://buymeacoffee.com/mpge)
